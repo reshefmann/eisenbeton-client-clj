@@ -15,29 +15,7 @@
 
 (>def ::nats-msg (partial instance? io.nats.client.Message))
 
-(comment
 
-  (do 
-    (defn test-handler
-      [msg nc reply-to]
-
-      (publish-response 
-        nc 
-        reply-to
-        (build-eisen-response 
-          #:response{:status 200 
-                     :headers [["Content-Type" "application/transit+json"]] 
-                     :content (byte-array [77 78 79])}))
-      (def mmm msg)
-      )
-
-
-    (def nc (create-nats-conn "nats://localhost:4222" ))
-    (def cancel (start-listening nc "test" "/test" test-handler)))
-
-  (cancel)
-
-  )
 
  
 (>defn extract-flatbuff-msg
