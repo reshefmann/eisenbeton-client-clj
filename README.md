@@ -1,10 +1,11 @@
 # eisenbeton-client-clj
 
-A Clojure library designed to ... well, that part is up to you.
+[Eisenbeton](https://github.com/reshefmann/eisenbeton-go) client library in Clojure.
 
 ## Usage
 
-FIXME
+Take a look at the **[sample](https://github.com/reshefmann/eisenbeton-sample/blob/develop/client/src/eisenbeton_sample/core.clj)** for usage example.
+
 
 ## License
 
